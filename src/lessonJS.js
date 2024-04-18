@@ -140,5 +140,24 @@
  * 4/17start
  */
 
-const sayHello = (name = "ゲスト") => console.log(`こんにちわ${name}さん！`);
-sayHello("健介");
+// const sayHello = (name = "ゲスト") => console.log(`こんにちわ${name}さん！`);
+// sayHello("健介");
+
+/**
+ * オブジェクトの省略記法
+ * 
+ */
+const name = "けんすけ";
+const age = 27;
+
+// const myprofile = {
+//   name :name,
+//   age :age
+// }
+// console.log(myprofile);
+//このような場合(変数名とプロパティ名が一緒の場合、省略できる)
+const myprofile = {
+  name ,
+  age
+}
+console.log(myprofile);
