@@ -110,3 +110,16 @@ console.log(hikizan(100,34));
  * 分割代入
  * 4/17start
  */
+
+const myprofile = {
+  nname: "kennsuke",
+  age : 27
+};
+//以下のようの.で繋ぐことができる。
+const massage9 = `名前は${myprofile.nname}です。年齢は${myprofile.age}です`
+console.log(massage9);
+//しかしこれだとプロパティが多くなった場合冗長になる。
+
+const {nname,age} = myprofile
+const massage10 = `名前は${nname}です。年齢は${age}です`
+console.log(massage10);
