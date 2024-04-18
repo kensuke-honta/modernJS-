@@ -78,32 +78,32 @@
 
 //従来の関数の書き方
 
-const plas = function(a,b){
-  let sam = a + b;
-  return sam;
-};
-console.log(plas(10,3));
+// const plas = function(a,b){
+//   let sam = a + b;
+//   return sam;
+// };
+// console.log(plas(10,3));
 
-//アロー関数
-const plas2 = (a,b) =>{
-  let sam = a + b;
-  return sam;
-}
-console.log(plas(10,3));
+// //アロー関数
+// const plas2 = (a,b) =>{
+//   let sam = a + b;
+//   return sam;
+// }
+// console.log(plas(10,3));
 
-const hontaa = (a,b) => {
-  let tasizan = a + b;
-  return tasizan;
-}
+// const hontaa = (a,b) => {
+//   let tasizan = a + b;
+//   return tasizan;
+// }
 
-console.log(hontaa(32,23));
+// console.log(hontaa(32,23));
 
-const hikizan = (a,b) =>{
-  let hikizan = a - b;
-  return hikizan;
-}
+// const hikizan = (a,b) =>{
+//   let hikizan = a - b;
+//   return hikizan;
+// }
 
-console.log(hikizan(100,34));
+// console.log(hikizan(100,34));
 
 
 /**
@@ -125,11 +125,20 @@ console.log(hikizan(100,34));
 // console.log(massage10);
 
 //配列の分割代入
-const myprofile2 = ["honta",25];
+// const myprofile2 = ["honta",25];
 // const massage5 = `名前は${myprofile2[0]}です。年齢は${myprofile2[1]}です`
 // console.log(massage5);
 
 //上記を分割代入すると。。。
-const [name,age] = myprofile2; //配列番号で呼び出すのではなく好きな変数をここでつけるイメージ
-const  massage13 = `名前は${name}です。年齢は${age}です`
-console.log(massage13);
+// const [name,age] = myprofile2; //配列番号で呼び出すのではなく好きな変数をここでつけるイメージ
+// const  massage13 = `名前は${name}です。年齢は${age}です`
+// console.log(massage13);
+
+/**
+ * デフォルト値(引数、分割代入で使用)　デフォルト値とは、nameという変数が渡されていないときにテンプレを渡すこと
+ * これによりundefinedが出なくなる
+ * 4/17start
+ */
+
+const sayHello = (name = "ゲスト") => console.log(`こんにちわ${name}さん！`);
+sayHello("健介");
