@@ -111,15 +111,25 @@ console.log(hikizan(100,34));
  * 4/17start
  */
 
-const myprofile = {
-  nname: "kennsuke",
-  age : 27
-};
-//以下のようの.で繋ぐことができる。
-const massage9 = `名前は${myprofile.nname}です。年齢は${myprofile.age}です`
-console.log(massage9);
-//しかしこれだとプロパティが多くなった場合冗長になる。
+// const myprofile = {
+//   nname: "kennsuke",
+//   age : 27
+// };
+// //以下のようの.で繋ぐことができる。
+// const massage9 = `名前は${myprofile.nname}です。年齢は${myprofile.age}です`
+// console.log(massage9);
+// //しかしこれだとプロパティが多くなった場合冗長になる。
 
-const {nname,age} = myprofile
-const massage10 = `名前は${nname}です。年齢は${age}です`
-console.log(massage10);
+// const {nname,age} = myprofile
+// const massage10 = `名前は${nname}です。年齢は${age}です`
+// console.log(massage10);
+
+//配列の分割代入
+const myprofile2 = ["honta",25];
+// const massage5 = `名前は${myprofile2[0]}です。年齢は${myprofile2[1]}です`
+// console.log(massage5);
+
+//上記を分割代入すると。。。
+const [name,age] = myprofile2; //配列番号で呼び出すのではなく好きな変数をここでつけるイメージ
+const  massage13 = `名前は${name}です。年齢は${age}です`
+console.log(massage13);
