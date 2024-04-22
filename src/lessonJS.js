@@ -182,3 +182,19 @@ const [num1,num2,...arr3] = arr2;
 console.log(arr2);
 
 console.log(...arr2);
+
+/**
+ * mapやfiltermを使った配列の処理
+ */
+
+const nameArr = ["ほんた","いせ","ひろせ"];
+// console.log(nameArr);
+// for (let index = 0; index < nameArr.length; index++){
+//   console.log(nameArr[index])
+// }
+// const nameArr2 = nameArr.map((name) => {
+//   return name;
+// });
+// console.log(nameArr2);
+
+nameArr.map((name) => console.log(name));
