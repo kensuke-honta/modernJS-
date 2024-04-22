@@ -17,7 +17,7 @@
 // val = "letを上書き";
 // console.log(val);
 
-//letは上書きはできるが再宣言はできない。よって以下だとエラーになる
+// letは上書きはできるが再宣言はできない。よって以下だとエラーになる
 // let val = "let再宣言";
 
 // const val = "宣言";
@@ -147,8 +147,8 @@
  * オブジェクトの省略記法
  * 
  */
-const name = "けんすけ";
-const age = 27;
+// const name = "けんすけ";
+// const age = 27;
 
 // const myprofile = {
 //   name :name,
@@ -156,8 +156,29 @@ const age = 27;
 // }
 // console.log(myprofile);
 //このような場合(変数名とプロパティ名が一緒の場合、省略できる)
-const myprofile = {
-  name ,
-  age
-}
-console.log(myprofile);
+// const myprofile = {
+//   name ,
+//   age
+// }
+// console.log(myprofile);
+
+/**
+ * スプレッド構文 ...
+ * 
+ */
+
+//配列の展開として使う方法
+// 配列の中身を順番に展開していきたい場合に使用できる
+const arr1 = [1,2];
+console.log(arr1)
+console.log(...arr1)
+//　このように出力される
+// [ 1, 2 ]
+// 1 2
+
+// まとめる
+const arr2 = [1,2,3,4,5];
+const [num1,num2,...arr3] = arr2;
+console.log(arr2);
+
+console.log(...arr2);
