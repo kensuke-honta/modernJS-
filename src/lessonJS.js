@@ -198,3 +198,7 @@ const nameArr = ["ほんた","いせ","ひろせ"];
 // console.log(nameArr2);
 
 nameArr.map((name) => console.log(name));
+
+/**
+ * 三項演算子
+ */
