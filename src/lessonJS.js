@@ -1,3 +1,4 @@
+'use strict';
 // let hon = "本多";
 // console.log(hon);
 
@@ -237,3 +238,13 @@ const checkSum = (num1,num2) =>{
 }
 
 console.log(checkSum(1,4999));
+
+/**
+ * 論理演算子の本当の意味を知ろう(おまけ)
+ * 
+ * 
+ */
+// ||の本当の意味 -> 左側がtruthyの時、その時点で返却される
+const num = 1;
+const fee = num || "金額が未設定です";
+console.log(fee);
