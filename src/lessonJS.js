@@ -185,6 +185,7 @@ console.log(...arr2);
 
 /**
  * mapやfiltermを使った配列の処理
+ * filterとは配列の要素をフィルタリングして出力すること
  */
 
 const nameArr = ["ほんた","いせ","ひろせ"];
@@ -198,6 +199,23 @@ const nameArr = ["ほんた","いせ","ひろせ"];
 // console.log(nameArr2);
 
 nameArr.map((name) => console.log(name));
+nameArr.map((name2) => console.log(name2));
+
+const numArray = [1,2,3,4,5];
+const newNumArray = numArray.filter((num) => {
+  return num % 2  === 1;
+});
+
+console.log(newNumArray);
+
+const newNameArr = nameArr.map((name) => {
+  if (name === "ひろせ"){
+    return name
+   } else {
+      return name + "さん";
+    }
+});
+console.log(newNameArr);
 
 /**
  * 三項演算子
