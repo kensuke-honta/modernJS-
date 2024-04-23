@@ -220,3 +220,20 @@ console.log(newNameArr);
 /**
  * 三項演算子
  */
+//ある条件?条件がtrueの時、falseの時
+// const val1  = 1<0 ? "trueです":"falseです";//１が０より大きいというのは正しいのでtrueですが出力される 逆にするとfalseですが出力される
+// console.log(val1)
+
+// const num = "1300";
+// console.log(num.toLocaleString());
+
+// const formtterNum = typeof num === "number" ? num.toLocaleString() : "数値を入力してください";
+// console.log(formtterNum);
+// const val1  =  1>0 ? "trueです":"falseです";
+// console.log(val1)
+
+const checkSum = (num1,num2) =>{
+  return num1 + num2 > 100 ? "１００を超えています" : "１００以内です"
+}
+
+console.log(checkSum(1,4999));
