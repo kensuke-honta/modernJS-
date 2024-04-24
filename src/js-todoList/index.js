@@ -10,11 +10,25 @@ const onClickAdd = () => {
   const p = document.createElement("p");
   p.className = "todo-item";
   p.innerText = inputText;
+
+  //bottun(完了タグ)生成
+  const completeButton = document.createElement("button");
+  completeButton.innerText = "完了";
+  console.log( completeButton);
+
+  //bottun(削除タグ)生成
+  const deleteButton = document.createElement("button");
+  deleteButton.innerText = "削除";
+  console.log( deleteButton);
+
   div.appendChild(p);
+  div.appendChild(completeButton);
+  div.appendChild(deleteButton);
   li.appendChild(div);
 
-  document.getElementById("incomplete-list").appendChild(li);
+  
 
+  document.getElementById("incomplete-list").appendChild(li);
 
   console.log(li);
 }
