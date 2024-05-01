@@ -7,6 +7,11 @@ import { ColorfulMessage } from "./components/colorfulMessage";
   const onClickCountUp = () => {
     setNum(num + 1);
   };
+  const [isShowFace,setIsShowFace] = useState(true);
+
+  const onClickToggle = () => {
+    setIsShowFace(!isShowFace);
+  }
   const fontStyle = {
     color :"blue",
     fontSize : "100px"
@@ -21,6 +26,9 @@ import { ColorfulMessage } from "./components/colorfulMessage";
       <button onClick={onClickCountUp}>カウントアップ</button>
       <p>{ num }</p>
       {/* {console.log(num)} */}
+      <button onClick={ onClickToggle}>on/off</button>
+       { isShowFace && <p>🥹</p>} {/*&& 左がtrueの時は右を評価しfalseの時は右には目もくれずfalseを返す */}
+      
     </>
   )
 };
