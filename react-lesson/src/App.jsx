@@ -1,4 +1,5 @@
  // コンポーネントファイルは拡張子をjsxにする
+ //調べること　仮装DOM
 import { useState } from "react";
 import { ColorfulMessage } from "./components/colorfulMessage";
  
@@ -26,7 +27,7 @@ import { ColorfulMessage } from "./components/colorfulMessage";
       <button onClick={onClickCountUp}>カウントアップ</button>
       <p>{ num }</p>
       {/* {console.log(num)} */}
-      <button onClick={ onClickToggle}>on/off</button>
+      <button onClick={ onClickToggle }>on/off</button>
        { isShowFace && <p>🥹</p>} {/*&& 左がtrueの時は右を評価しfalseの時は右には目もくれずfalseを返す */}
       
     </>
