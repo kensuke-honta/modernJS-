@@ -5,10 +5,12 @@ export const Todo =  () => {
   return (
     <>
       <div>
-        <input type="text" />
+        <input placeholder='タイトルを入力' />
         <button>追加</button>
       </div>
-      <div>hoge</div>
+      <div>
+        <p>タイトルを入力</p>
+      </div>
       <div>hoge</div>
     </>
   );
